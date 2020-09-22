@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A JavaScript Powered Analog Clock</title>
+    <link rel="stylesheet" href="/resources/css/style.css" type="text/css" media="all">
+    <script src="/resources/js/script.js" defer></script>
+    <script src="/resources/js/clock.js" defer></script>
+  </head>
+
+<body>
+<main class="main">
+  <div class="clockbox">
+    <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+      <g id="face">
+        <circle class="circle" cx="300" cy="300" r="250"/>
+        <circle class="mid-circle" cx="300" cy="300" r="12.5"/>
+      </g>
+      <g id="hour">
+        <path class="hour-arm" d="M 300 300 V 150"/>
+        <circle class="sizing-box" cx="300" cy="300" r="250"/>
+      </g>
+      <g id="minute">
+          <path class="minute-arm" d="M 300 300 V 80"/>
+          <circle class="sizing-box" cx="300" cy="300" r="250"/>
+      </g>
+      <g id="second">
+          <path class="second-arm" d="M 300 340 V 55"/>
+          <circle class="sizing-box" cx="300" cy="300" r="250"/>
+          <circle class="second-circle" cx="300" cy="300" r="8"/>
+      </g>
+    </svg>
+  </div>
+</main>
+</body>
+</html>
