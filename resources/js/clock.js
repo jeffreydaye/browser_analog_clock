@@ -1,4 +1,4 @@
-let radius = 250;
+let radius = 240;
 let barLength = 25;
 let barEnd = radius - barLength;
 let clockFace = document.querySelector("#face");
